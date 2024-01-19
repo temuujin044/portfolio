@@ -1,3 +1,4 @@
+import IconsSkill from "./IconsSkill";
 export const Skills = () => {
   return (
     <div className="flex flex-col items-start self-stretch px-[80px] py-[96px]">
@@ -9,7 +10,9 @@ export const Skills = () => {
           The skills, tools and technologies I am really good at:
         </p>
       </div>
-      <div></div>
+      <div className="flex">
+        <IconsSkill />
+      </div>
     </div>
   );
 };
