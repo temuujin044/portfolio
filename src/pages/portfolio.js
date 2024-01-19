@@ -22,6 +22,7 @@ export const Portfolio = () => {
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
+      <Skills isDarkMode={isDarkMode} />
     </div>
   );
 };

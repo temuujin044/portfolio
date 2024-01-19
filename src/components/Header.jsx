@@ -1,4 +1,3 @@
-import { ThemeIcon, ThemeDayIcon } from "./icons/icons";
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div
@@ -11,8 +10,8 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
           &lt;SS /&gt;
         </p>
         <div
-          className={`flex pl-[596px] self-center text-gray-600 text-base font-medium gap-[24px] ${
-            isDarkMode ? "dark:text-[#D1D5DB]" : ""
+          className={`flex pl-[596px] self-center text-base font-medium gap-[24px] ${
+            isDarkMode ? "dark:text-[#D1D5DB]" : "text-gray-600 "
           }`}
         >
           <h3>About</h3>
@@ -28,7 +27,7 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
         }}
       >
         <img
-          src={isDarkMode ? <ThemeDayIcon /> : <ThemeIcon />}
+          src={isDarkMode ? "/Icon Button.svg" : "/Icon1.svg"}
           alt=""
           className="h-[24px] self-center pr-[16px] pl-[24px] cursor-pointer"
         />

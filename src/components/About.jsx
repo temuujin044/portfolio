@@ -1,14 +1,16 @@
 export const About = ({ isDarkMode }) => {
   return (
     <div
-      className={` flex flex-col justify-center align-center bg-gray-50 pt-[96px] ${
-        isDarkMode ? "dark:bg-[#111827]" : ""
+      className={` flex flex-col justify-center align-center  pt-[96px] ${
+        isDarkMode ? "dark:bg-[#111827]" : "bg-gray-50"
       }`}
     >
       <div className="flex direction-col justify-center align-center  pb-[48px] ">
         <h2
-          className={`flex justify-center rounded-xl w-[105px] h-[28px] px-[4px]  bg-gray-200  text-gray-600 ${
-            isDarkMode ? "bg-[#374151] text-[#D1D5DB]" : ""
+          className={`flex justify-center rounded-xl w-[105px] h-[28px] px-[4px]   ${
+            isDarkMode
+              ? "bg-[#374151] text-[#D1D5DB]"
+              : "bg-gray-200  text-gray-600"
           }`}
         >
           About me
@@ -18,27 +20,29 @@ export const About = ({ isDarkMode }) => {
         <div className="flex justify-between px-[32px]">
           <div className="flex relative w-[584px] ">
             <div
-              className={`w-[400px] h-[480px] border-[8px] border-[#F9FAFB] bg-[url(/heroPic.jpg)] absolute bg-cover left-10 top-0 z-[1] ${
-                isDarkMode ? "border-[#111827] " : ""
+              className={`w-[400px] h-[480px] border-[8px] bg-[url(/heroPic.jpg)] absolute bg-cover left-10 top-0 z-[1] ${
+                isDarkMode ? "border-[#111827] " : " border-[#F9FAFB]"
               }`}
             ></div>
             <div
-              className={`w-[400px] h-[480px] border-[8px] border-[#F9FAFB] bg-[#E5E7EB] absolute left-0 top-10 ${
-                isDarkMode ? "border-[#111827] bg-[#374151]" : ""
+              className={`w-[400px] h-[480px] border-[8px] absolute left-0 top-10 ${
+                isDarkMode
+                  ? "border-[#111827] bg-[#374151]"
+                  : " border-[#F9FAFB] bg-[#E5E7EB]"
               }`}
             ></div>
           </div>
           <div className="flex flex-col w-[584px] border-red-100 gap-[16px] ">
             <h2
-              className={`text-3xl text-gray-900 font-semibold tracking-[-0.6px] pb-[24px] ${
-                isDarkMode ? "text-[#F9FAFB]" : ""
+              className={`text-3xl font-semibold tracking-[-0.6px] pb-[24px] ${
+                isDarkMode ? "text-[#F9FAFB]" : " text-gray-900"
               }`}
             >
               Curious about me? Here you have it:
             </h2>
             <p
-              className={`text-base font-normal text-gray-600 ${
-                isDarkMode ? "text-[#D1D5DB]" : ""
+              className={`text-base font-normal  ${
+                isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
               }`}
             >
               I'm a passionate, self-proclaimed designer who specializes in full
@@ -48,8 +52,8 @@ export const About = ({ isDarkMode }) => {
               writing clear, readable, highly performant code matters to me.
             </p>
             <p
-              className={`text-base font-normal text-gray-600 ${
-                isDarkMode ? "text-[#D1D5DB]" : ""
+              className={`text-base font-normal ${
+                isDarkMode ? "text-[#D1D5DB]" : "text-gray-600 "
               }`}
             >
               I began my journey as a web developer in 2015, and since then,
@@ -61,16 +65,16 @@ export const About = ({ isDarkMode }) => {
               Tailwindcss, Supabase and much more.
             </p>
             <p
-              className={`text-base font-normal text-gray-600 ${
-                isDarkMode ? "text-[#D1D5DB]" : ""
+              className={`text-base font-normal  ${
+                isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
               }`}
             >
               I am very much a progressive thinker and enjoy working on products
               end to end, from ideation all the way to development.
             </p>
             <p
-              className={`text-base font-normal text-gray-600 ${
-                isDarkMode ? "text-[#D1D5DB]" : ""
+              className={`text-base font-normal  ${
+                isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
               }`}
             >
               When I'm not in full-on developer mode, you can find me hovering
@@ -80,8 +84,8 @@ export const About = ({ isDarkMode }) => {
               you can follow me on GitHub.
             </p>
             <p
-              className={`text-base font-normal text-gray-600 ${
-                isDarkMode ? "text-[#D1D5DB]" : ""
+              className={`text-base font-normal  ${
+                isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
               }`}
             >
               Finally, some quick bits about me.
@@ -89,15 +93,15 @@ export const About = ({ isDarkMode }) => {
             <div className="flex gap-[10px]">
               <div>
                 <li
-                  className={`text-base font-normal text-gray-600 ${
-                    isDarkMode ? "text-[#D1D5DB]" : ""
+                  className={`text-base font-normal ${
+                    isDarkMode ? "text-[#D1D5DB]" : "text-gray-600 "
                   }`}
                 >
                   B.E. in Computer Engineering
                 </li>
                 <li
-                  className={`text-base font-normal text-gray-600 ${
-                    isDarkMode ? "text-[#D1D5DB]" : ""
+                  className={`text-base font-normal  ${
+                    isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
                   }`}
                 >
                   Full time freelancer
@@ -105,15 +109,15 @@ export const About = ({ isDarkMode }) => {
               </div>
               <div>
                 <li
-                  className={`text-base font-normal text-gray-600 ${
-                    isDarkMode ? "text-[#D1D5DB]" : ""
+                  className={`text-base font-normal  ${
+                    isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
                   }`}
                 >
                   Avid learner
                 </li>
                 <li
-                  className={`text-base font-normal text-gray-600 ${
-                    isDarkMode ? "text-[#D1D5DB]" : ""
+                  className={`text-base font-normal ${
+                    isDarkMode ? "text-[#D1D5DB]" : "text-gray-600 "
                   }`}
                 >
                   Aspiring indie hacker
@@ -121,8 +125,8 @@ export const About = ({ isDarkMode }) => {
               </div>
             </div>
             <p
-              className={`text-base font-normal text-gray-600 ${
-                isDarkMode ? "text-[#D1D5DB]" : ""
+              className={`text-base font-normal  ${
+                isDarkMode ? "text-[#D1D5DB]" : "text-gray-600"
               }`}
             >
               One last thing, I'm available for freelance work, so feel free to
