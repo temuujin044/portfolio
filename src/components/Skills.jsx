@@ -10,9 +10,7 @@ export const Skills = () => {
           The skills, tools and technologies I am really good at:
         </p>
       </div>
-      <div className="flex">
-        <IconsSkill />
-      </div>
+      <div className="flex"></div>
     </div>
   );
 };

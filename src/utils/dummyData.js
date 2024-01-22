@@ -1,5 +1,5 @@
 import {
-  JavascriftIcon,
+  iconJavascrift,
   iconTypescript,
   iconExperes,
   iconNest,
