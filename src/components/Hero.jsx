@@ -1,10 +1,10 @@
-import { Location, Git, Twitter, Figma } from "@/components/icons/icons";
+import { Location, Git, Twitter, Figma } from "@/components/icons/index";
 
 export const Hero = ({ isDarkMode }) => {
   const iconColor = isDarkMode ? "dark:text-[#FFF]" : "";
   return (
     <div
-      className={`flex px-[112px] py-[96px]  gap-[48px] ${
+      className={`flex  py-[96px]  gap-[48px] justify-center ${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >

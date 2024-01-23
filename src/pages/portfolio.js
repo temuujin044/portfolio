@@ -18,11 +18,12 @@ export const Portfolio = () => {
   };
 
   return (
-    <div className="flex flex-col max-w-[1440px] mx-auto">
+    <div className="flex flex-col w-[100vw] mx-auto">
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Skills isDarkMode={isDarkMode} />
+      <Experience />
     </div>
   );
 };

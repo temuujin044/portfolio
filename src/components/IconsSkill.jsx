@@ -1,14 +1,28 @@
 import React from "react";
-import { skillsIcon } from "@/utils/dummyData";
+import { skillsIcon, SecSkillsIcon } from "@/utils/dummyData";
 
-const IconsSkill = () => {
+export const IconsSkill = () => {
   return (
-    <div>
-      {skillsIcon.map((skill, index) => {
-        return <div key={index}>{skill.icon}</div>;
-      })}
+    <div className="   flex justify-between pb-[48px] gap-[70px]">
+      {skillsIcon.map((skill, index) => (
+        <div key={index}>
+          <p>{skill.icon}</p>
+          <p className="flex justify-center">{skill.iconName}</p>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default IconsSkill;
+export const IconsSecSkill = () => {
+  return (
+    <div className="flex  justify-between">
+      {SecSkillsIcon.map((skill, index) => (
+        <div key={index}>
+          <p>{skill.icon}</p>
+          <p className="flex justify-center">{skill.iconName}</p>
+        </div>
+      ))}
+    </div>
+  );
+};

@@ -1,7 +1,7 @@
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div
-      className={`flex w-[1440px] px-[110px] py-[16px] mx-auto ${
+      className={`flex py-[16px] justify-center${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >

@@ -17,7 +17,7 @@ export const About = ({ isDarkMode }) => {
         </h2>
       </div>
       <div className="px-[80px] pb-[96px]">
-        <div className="flex justify-between px-[32px]">
+        <div className="flex justify-center gap-[48px]">
           <div className="flex relative w-[584px] ">
             <div
               className={`w-[400px] h-[480px] border-[8px] bg-[url(/heroPic.jpg)] absolute bg-cover left-10 top-0 z-[1] ${
