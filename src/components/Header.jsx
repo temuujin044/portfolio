@@ -1,11 +1,11 @@
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div
-      className={`flex py-[16px] justify-center${
+      className={`flex sm:py-[16px] sm:justify-center${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >
-      <div className="flex self-center text-3xl font-bold ">
+      <div className="sm:flex sm:self-center sm:text-3xl sm:font-bold ">
         <p className={`${isDarkMode ? "dark:text-gray-50" : "text-gray-900"}`}>
           &lt;SS /&gt;
         </p>
@@ -17,7 +17,7 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
           <h3>About</h3>
           <h3>Work</h3>
           <h3>Testimonials</h3>
-          <h3 className="pr-[24px]">Contact</h3>
+          <h3 className="sm:pr-[24px]">Contact</h3>
         </div>
       </div>
       <div
@@ -27,12 +27,12 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
         }}
       >
         <img
-          src={isDarkMode ? "/Icon Button.svg" : "/Icon1.svg"}
+          src={isDarkMode ? "sm:/IconButton.svg" : "sm:/Icon1.svg"}
           alt=""
-          className="h-[24px] self-center pr-[16px] pl-[24px] cursor-pointer"
+          className="sm:h-[24px] sm:self-center sm:pr-[16px] sm:pl-[24px] cursor-pointer"
         />
         <button
-          className={`py-1.5 px-4 rounded-xl ${
+          className={`sm:py-1.5 sm:px-4 sm:rounded-xl ${
             isDarkMode
               ? "dark:bg-[#F9FAFB] text-[#111827] "
               : "bg-gray-900 text-gray-50"

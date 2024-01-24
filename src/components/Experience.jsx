@@ -1,3 +1,5 @@
+import { ExperienceCard } from "./Cards";
+
 export const Experience = () => {
   return (
     <div
@@ -18,7 +20,7 @@ export const Experience = () => {
           </div>
         </div>
         <div className="flex w-[100%] flex-col justify-center items-center">
-          {/* <ExperienceCard /> */}
+          <ExperienceCard />
         </div>
       </div>
     </div>

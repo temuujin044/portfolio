@@ -1,5 +1,5 @@
-import { IconsSkill } from "./IconsSkill";
-import { IconsSecSkill } from "./IconsSkill";
+import { IconsSkill, IconsSecSkill } from "./IconsSkill";
+
 export const Skills = () => {
   return (
     <div className=" flex flex-col py-[96px]">

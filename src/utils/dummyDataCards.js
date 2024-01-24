@@ -1,6 +1,7 @@
+import { FiskilIcon } from "@/components/icons";
+
 export const experienceData = [
   {
-    icon: "/icons/logo-upwork.jpg",
     position: "Sr.Frontend Developer",
     responsible: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -11,7 +12,6 @@ export const experienceData = [
     posDate: "Nov 2021 - Present",
   },
   {
-    icon: "/icons/logo-upwork.jpg",
     position: "Team Lead",
     responsible: [
       "Sed quis justo ac magna.",
@@ -22,7 +22,6 @@ export const experienceData = [
     posDate: "Jul 2017 - Oct 2021",
   },
   {
-    icon: "/icons/logo-upwork.jpg",
     position: "Full Stack Developer",
     responsible: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -31,65 +30,62 @@ export const experienceData = [
   },
 ];
 
-// export const workData = [
-//   {
-//     image: "/workImage.png",
-//     workTitle: "Fiskil",
-//     workDescription:
-//       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-//     workSkills: [
-//       "React",
-//       "Next.js",
-//       "Typescript",
-//       "Nest.js",
-//       "PostgreSQL",
-//       "Tailwindcss",
-//       "Figma",
-//       "Cypress",
-//       "Storybook",
-//       "Git",
-//     ],
-//     workIcon: "/icons/icon-more.jpg",
-//     id: "normal",
-//   },
-//   {
-//     image: "/workImage.png",
-//     workTitle: "Fiskil",
-//     workDescription:
-//       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-//     workSkills: [
-//       "React",
-//       "Next.js",
-//       "Typescript",
-//       "Nest.js",
-//       "PostgreSQL",
-//       "Tailwindcss",
-//       "Figma",
-//       "Cypress",
-//       "Storybook",
-//       "Git",
-//     ],
-//     workIcon: "/icons/icon-more.jpg",
-//     id: "reverse",
-//   },
-//   {
-//     image: "/workImage.png",
-//     workTitle: "Fiskil",
-//     workDescription:
-//       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-//     workSkills: [
-//       "React",
-//       "Next.js",
-//       "Typescript",
-//       "Nest.js",
-//       "PostgreSQL",
-//       "Tailwindcss",
-//       "Figma",
-//       "Cypress",
-//       "Storybook",
-//       "Git",
-//     ],
-//     workIcon: "/icons/icon-more.jpg",
-//     id: "normal",
-//   },
-// ];
+export const workData = [
+  {
+    Image: "/work.png",
+    Title: "Fiskil",
+    Description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    Experience: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+    Icon: <FiskilIcon />,
+  },
+  {
+    Image: "/work.png",
+    Title: "Fiskil",
+    Description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    Experience: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+    Icon: <FiskilIcon />,
+  },
+  {
+    Image: "/work.png",
+    Title: "Fiskil",
+    Description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    Experience: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+    Icon: <FiskilIcon />,
+  },
+];
