@@ -17,7 +17,7 @@ const Index = () => {
   };
 
   return (
-    <div className="flex flex-col w-[100vw] mx-auto">
+    <div className=" flex flex-col w-[100vw] mx-auto ">
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />

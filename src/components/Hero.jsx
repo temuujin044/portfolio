@@ -4,21 +4,21 @@ export const Hero = ({ isDarkMode }) => {
   const iconColor = isDarkMode ? "dark:text-[#FFF]" : "";
   return (
     <div
-      className={`flex  py-[96px]  gap-[48px] justify-center ${
+      className={`p-[16px] flex items-center flex-col-reverse sm:flex-row  sm:py-[96px]  sm:gap-[48px] justify-center ${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >
-      <div className="w-[768px]">
-        <div className="pb-[48px] flex flex-col gap-[10px] ">
+      <div className="sm:w-[768px]">
+        <div className="w-[343px] gap-[8px] pb-[48px] sm:flex sm:flex-col sm:gap-[10px] ">
           <h2
-            className={` text-6xl font-bold ${
+            className={`text-4xl pb-[8px] sm:text-6xl sm:font-bold ${
               isDarkMode ? "dark:text-[#F9FAFB]" : "text-gary-900"
             }`}
           >
             Hi, I’m Sagar 👋
           </h2>
           <p
-            className={` font-normal text-base ${
+            className={`text-base  sm:font-normal sm:text-base ${
               isDarkMode ? "dark:text-[#D1D5DB]" : "text-gray-600"
             }`}
           >
@@ -30,7 +30,7 @@ export const Hero = ({ isDarkMode }) => {
           </p>
         </div>
         <div
-          className={`text-base pb-[48px] ${
+          className={`text-base  sm:text-base pb-[48px] ${
             isDarkMode ? "dark:text-[#D1D5DB]" : " text-gray-600"
           }`}
         >
@@ -39,7 +39,7 @@ export const Hero = ({ isDarkMode }) => {
             <p>Ahmedabad, India</p>
           </div>
           <div className="flex ">
-            <img src="/greenDot.png" alt="" className=" self-center" />
+            <img src="/greenDot.png" alt="" className=" sm:self-center" />
             <p>Available for new projects</p>
           </div>
         </div>
@@ -49,14 +49,14 @@ export const Hero = ({ isDarkMode }) => {
           <Figma color={iconColor} />
         </div>
       </div>
-      <div className="flex w-[400px] h-[360px] flex-[1 0 0] self-stretch relative">
+      <div className="flex items-center justify-center w-[343px] h-[300px] pb-[48px] sm:w-[400px] sm:h-[360px] sm:flex-[1 0 0] sm:self-stretch sm:relative">
         <div
-          className={`w-[280px] h-[320px] shrink-0 border-8  object-fill z-[1] absolute bottom-[40px] right-[40px]
+          className={`absolute sm:z-[1]  w-[240px] h-[280px] sm:w-[280px] sm:h-[320px] sm:shrink-0 sm:border-[8px]  sm:object-fill  sm:bottom-[40px] sm:right-[40px]
           bg-[url(/Pic.jpg)]
           bg-cover ${isDarkMode ? "border-[#030712]" : "border-[#FFF]"}`}
         ></div>
         <div
-          className={`w-[280px] h-[320px] shrink-0 border-8 absolute bottom-0 right-0 ${
+          className={` h-[280px] w-[280px]  sm:h-[320px] sm:shrink-0 sm:border-8 sm:absolute sm:bottom-0 sm:right-0 ${
             isDarkMode
               ? "bg-[#374151] border-[#030712]"
               : " border-[#FFF] bg-[#E5E7EB]"

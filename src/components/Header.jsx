@@ -1,16 +1,19 @@
+import { Menu } from "./icons";
+
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div
-      className={`flex sm:py-[16px] sm:justify-center${
+      className={`flex sm:py-[16px] sm:justify-center sm:[1280px]${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >
-      <div className="sm:flex sm:self-center sm:text-3xl sm:font-bold ">
+      <div className="flex self-center text-3xl font-bold ">
         <p className={`${isDarkMode ? "dark:text-gray-50" : "text-gray-900"}`}>
           &lt;SS /&gt;
         </p>
+
         <div
-          className={`flex pl-[596px] self-center text-base font-medium gap-[24px] ${
+          className={`hidden sm:flex sm:pl-[596px] sm:self-center sm:text-base sm:font-medium sm:gap-[24px] ${
             isDarkMode ? "dark:text-[#D1D5DB]" : "text-gray-600 "
           }`}
         >
@@ -20,8 +23,11 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
           <h3 className="sm:pr-[24px]">Contact</h3>
         </div>
       </div>
+      <div className="sm:hidden">
+        <Menu />
+      </div>
       <div
-        className="flex"
+        className="sm:flex"
         onClick={() => {
           toggleDarkMode();
         }}

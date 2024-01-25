@@ -25,3 +25,4 @@ export * from "./FiskilIcon";
 export * from "./CopyIcon";
 export * from "./PhoneIcon";
 export * from "./FooterIcon";
+export * from "./Menu";
