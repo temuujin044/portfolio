@@ -3,11 +3,11 @@ import { Menu } from "./icons";
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div
-      className={`flex sm:py-[16px] sm:justify-center ${
+      className={`flex justify-center sm:py-[16px]  ${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >
-      <div className="flex">
+      <div className="flex gap-[213px]">
         <div className="flex self-center text-3xl font-bold ">
           <p
             className={`${isDarkMode ? "dark:text-gray-50" : "text-gray-900"}`}

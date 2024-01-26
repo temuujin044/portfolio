@@ -1,11 +1,11 @@
 export const About = ({ isDarkMode }) => {
   return (
     <div
-      className={` flex flex-col justify-center align-center  pt-[96px] ${
+      className={` flex flex-col justify-center align-center pt-[64px] sm:pt-[96px] ${
         isDarkMode ? "dark:bg-[#111827]" : "bg-gray-50"
       }`}
     >
-      <div className="flex direction-col justify-center align-center  pb-[48px] ">
+      <div className="flex direction-col justify-center align-center  pb-[24px] sm:pb-[48px] ">
         <h2
           className={`flex justify-center rounded-xl w-[105px] h-[28px] px-[4px]   ${
             isDarkMode
@@ -16,25 +16,25 @@ export const About = ({ isDarkMode }) => {
           About me
         </h2>
       </div>
-      <div className="px-[80px] pb-[96px]">
-        <div className="flex justify-center gap-[48px]">
-          <div className="flex relative w-[584px] ">
+      <div className="pb-[64px] sm:pb-[96px] ">
+        <div className="sm:flex  sm:justify-center sm:gap-[48px] ">
+          <div className="flex sm:relative sm:w-[584px] mb-[48px]">
             <div
-              className={`w-[400px] h-[480px] border-[8px] bg-[url(/heroPic.jpg)] absolute bg-cover left-10 top-0 z-[1] ${
+              className={`w-[280px] h-[360px] border-r-[7px] sm:w-[400px] sm:h-[480px]  bg-[url(/heroPic.jpg)] sm:absolute bg-cover sm:left-10 sm:top-0 z-[1] ${
                 isDarkMode ? "border-[#111827] " : " border-[#F9FAFB]"
               }`}
             ></div>
             <div
-              className={`w-[400px] h-[480px] border-[8px] absolute left-0 top-10 ${
+              className={`w-[320px] h-[360px] sm:w-[400px] sm:h-[480px] sm:border-[8px] absolute sm:left-0 sm:top-10 ${
                 isDarkMode
                   ? "border-[#111827] bg-[#374151]"
                   : " border-[#F9FAFB] bg-[#E5E7EB]"
               }`}
             ></div>
           </div>
-          <div className="flex flex-col w-[584px] border-red-100 gap-[16px] ">
+          <div className="w-[343px] flex flex-col sm:w-[584px] border-red-100 gap-[16px] ">
             <h2
-              className={`text-3xl font-semibold tracking-[-0.6px] pb-[24px] ${
+              className={`text-2xl sm:text-3xl sm:font-semibold tracking-[-0.6px] pb-[24px] ${
                 isDarkMode ? "text-[#F9FAFB]" : " text-gray-900"
               }`}
             >

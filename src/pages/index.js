@@ -21,11 +21,11 @@ const Index = () => {
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
-      <Skills isDarkMode={isDarkMode} />
+      {/* <Skills isDarkMode={isDarkMode} />
       <Experience />
       <Work />
       <Contactme />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

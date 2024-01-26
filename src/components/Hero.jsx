@@ -4,12 +4,12 @@ export const Hero = ({ isDarkMode }) => {
   const iconColor = isDarkMode ? "dark:text-[#FFF]" : "";
   return (
     <div
-      className={`p-[16px] flex items-center flex-col-reverse sm:flex-row  sm:py-[96px]  sm:gap-[48px] justify-center ${
+      className={` py-[74px] flex items-center flex-col-reverse sm:flex-row  sm:py-[96px]  sm:gap-[48px] justify-center ${
         isDarkMode ? "dark:bg-[#030712]" : ""
       }`}
     >
-      <div className="sm:w-[768px]">
-        <div className="w-[343px] gap-[8px] pb-[48px] sm:flex sm:flex-col sm:gap-[10px] ">
+      <div className="w-[343px] sm:w-[768px] ">
+        <div className="gap-[8px] pb-[48px] sm:flex sm:flex-col sm:gap-[10px] ">
           <h2
             className={`text-4xl pb-[8px] sm:text-6xl sm:font-bold ${
               isDarkMode ? "dark:text-[#F9FAFB]" : "text-gary-900"
@@ -51,12 +51,12 @@ export const Hero = ({ isDarkMode }) => {
       </div>
       <div className="flex items-center justify-center w-[343px] h-[300px] pb-[48px] sm:w-[400px] sm:h-[360px] sm:flex-[1 0 0] sm:self-stretch sm:relative">
         <div
-          className={`absolute sm:z-[1]  w-[240px] h-[280px] sm:w-[280px] sm:h-[320px] sm:shrink-0 sm:border-[8px]  sm:object-fill  sm:bottom-[40px] sm:right-[40px]
+          className={`absolute mb-[30px] border-r-[7px] w-[240px] h-[280px]  sm:z-[1]  sm:w-[280px] sm:h-[320px] sm:shrink-0  sm:mb-[0px] sm:object-fill  sm:bottom-[40px] sm:right-[40px]
           bg-[url(/Pic.jpg)]
           bg-cover ${isDarkMode ? "border-[#030712]" : "border-[#FFF]"}`}
         ></div>
         <div
-          className={` h-[280px] w-[280px]  sm:h-[320px] sm:shrink-0 sm:border-8 sm:absolute sm:bottom-0 sm:right-0 ${
+          className={` h-[280px] w-[270px]  sm:h-[320px] sm:shrink-0 sm:border-8 sm:absolute sm:bottom-0 sm:right-0 ${
             isDarkMode
               ? "bg-[#374151] border-[#030712]"
               : " border-[#FFF] bg-[#E5E7EB]"
